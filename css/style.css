@@ -7,6 +7,32 @@ ul {
   list-style: none;
 }
 
-.content {
-  color: #C54FD4;
+.navigation {
+  background-color: blue;
+}
+.navigation .nav {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  text-transform: uppercase;
+}
+.navigation .nav li {
+  padding: 10px;
+  position: relative;
+}
+.navigation .nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.navigation .nav a:hover {
+  color: red;
+}
+.navigation .nav ul {
+  position: absolute;
+  width: 100px;
+  background-color: yellow;
+  top: 40px;
+}
+.navigation .nav li:hover ul {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
