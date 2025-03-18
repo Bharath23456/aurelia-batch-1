@@ -3,36 +3,36 @@
   padding: 0;
 }
 
-ul {
+.container {
+  background-color: grey;
+}
+.container > ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.container > ul li {
+  position: relative;
   list-style: none;
 }
-
-.navigation {
-  background-color: blue;
-}
-.navigation .nav {
-  display: flex;
-  gap: 10px;
-  justify-content: flex-end;
+.container > ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
   text-transform: uppercase;
 }
-.navigation .nav li {
-  padding: 10px;
-  position: relative;
+.container > ul li a:hover {
+  color: blue;
+  cursor: pointer;
 }
-.navigation .nav a {
-  color: #fff;
-  text-decoration: none;
-}
-.navigation .nav a:hover {
-  color: red;
-}
-.navigation .nav ul {
+.container > ul li ul {
   position: absolute;
-  width: 100px;
-  background-color: yellow;
-  top: 40px;
+  background-color: pink;
+  width: 80px;
+  top: 30px;
+  display: none;
 }
-.navigation .nav li:hover ul {
+.container > ul li:hover ul {
   display: block;
 }/*# sourceMappingURL=style.css.map */
