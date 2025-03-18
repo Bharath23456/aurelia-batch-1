@@ -25,15 +25,24 @@
                 }
                 
             }
-            ul{
+           > ul{
                 position: absolute;
                 background-color: pink;
                 width: 80px;
                 top: 30px;
                 display: none;
+                li{
+                    position: relative;
+                    ul{
+                        position: absolute;
+                        top: 0;
+                        left: 102px;
+                        display: none;
+                    }
+                }
             }
             &:hover{
-                ul{
+                > ul{
                     display: block;
                 }
             }
