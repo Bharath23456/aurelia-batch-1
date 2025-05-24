@@ -3,10 +3,58 @@
   padding: 0;
 }
 
-ul {
-  list-style: none;
+body {
+  background-color: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-transform: capitalize;
 }
 
-.content {
-  color: #C54FD4;
+.container {
+  background: white;
+  padding: 40px;
+  width: 300px;
+}
+.container h1 {
+  text-align: center;
+}
+.container .login {
+  position: relative;
+}
+.container .login .field {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.container .login .pass {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 7px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  right: 50%;
+  text-transform: uppercase;
+  top: 105%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+button:hover {
+  color: blue;
 }/*# sourceMappingURL=style.css.map */
