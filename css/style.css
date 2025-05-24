@@ -27,6 +27,7 @@ ul.parent li ul {
   display: none;
   background-color: gray;
   list-style: none;
+  top: 50px;
 }
 ul.parent li:hover ul {
   display: block;
