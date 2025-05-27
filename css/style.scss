@@ -1,11 +1,128 @@
-*{
-    margin: 0;
-    padding: 0;
+.container {
+  background: url('../images/david-becker-mGx5-xt1uec-unsplash.jpg') no-repeat center/cover;
+  height: 70vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+
+  .font-inside {
+    h1 {
+      position: absolute;
+      top: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #EEE8AA;
+      text-transform: uppercase;
+      font-size: 3rem;
+
+      &:hover {
+        color: darkorange;
+      }
+    }
+    h2 {
+      position: absolute;
+      bottom: 200px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #EEE8AA;
+      text-transform: uppercase;
+      font-size: 2rem;
+
+      &:hover {
+        color: darkorange;
+      }
+    }
+    p {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      font-size: 2.5rem;
+      color: #EEE8AA;
+      padding: 40px;
+
+      &:hover {
+        color: darkorange;
+      }
+    }
+  }
 }
-ul{
-    list-style: none;
+
+ul.navbar {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  list-style: none;
+
+  li {
+    a {
+      text-decoration: none;
+      color: #EEE8AA;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 8px 12px;
+      border-radius: 3px;
+      text-transform: uppercase;
+
+      &:hover {
+        background: black;
+        color: gold;
+      }
+    }
+  }
 }
-.content{
-    color: #C54FD4;
-    width: 100px;
+
+.aboutus {
+  position: relative;
+  padding: 50px;
+  height: 300px;
+  width: 100%;
+  font-size: large;
+
+  h1 {
+    position: absolute;
+    top: 100px;
+    right: 550px;
+  }
+
+  img {
+    height: 300px;
+    width: 45%;
+    padding: 20px;
+  }
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50px;
+    font-style: normal;
+  
+  }
 }
+
+.services {
+  text-align: center;
+  padding: 2rem;
+
+  .service-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+
+    .service-item {
+      background: #fff;
+      padding: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+
+      &:hover {
+        color: gold;
+        background: black;
+      }
+    }
+  }
+}
+
